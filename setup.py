@@ -11,7 +11,8 @@ setuptools.setup(
     author="Boni Lindsley",
     author_email="boni.lindsley@gmail.com",
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(where="src")
+    + ["pelican.plugins.markdown_unrendered_metadata"],
     license="MIT",
     install_requires=[
         "Markdown >= 3.3.4",

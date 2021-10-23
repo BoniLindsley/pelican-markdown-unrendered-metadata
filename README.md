@@ -37,23 +37,10 @@ the order of stored value is unspecified.
 Installation
 ------------
 
-Inside `pelicanconf.py`,
-add `pelican_markdown_unrendered_metadata`
-to the `PLUGINS` list variable,
-and the `src` directory to the `PLUGIN_PATHS` list variable.
-
-For example, if this `README.md` file is at the path
-`${project_root}/plugins/pelican-markdown-unrendered-metadata/README.md`,
-then the two variables in `${project_root}/pelicanconf.py` should contain
-
-```py
-PLUGINS = [
-  'pelican_markdown_unrendered_metadata',
-]
-PLUGIN_PATHS = [
-  'plugins/pelican-markdown-unrendered-metadata/src',
-]
-```
+If `PLUGINS` is not specified inside `pelicanconf.py`,
+then installing this package should be sufficient setup.
+Otherwise, inside `pelicanconf.py`,
+add `markdown_unrendered_metadata` to the `PLUGINS` list variable.
 
 Raison d'être
 -------------

@@ -11,6 +11,7 @@ omit = [
 ]
 source = [
   "src",
+  "src/pelican/plugins/markdown_unrendered_metadata",
 ]
 
 [tool.coverage.report]
