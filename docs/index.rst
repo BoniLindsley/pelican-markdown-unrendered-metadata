@@ -4,5 +4,4 @@
 
 .. include:: ../README.md
 
-.. automodule:: phile
-.. automodule:: test_phile
+.. automodule:: pelican_markdown_unrendered_metadata

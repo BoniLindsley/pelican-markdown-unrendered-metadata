@@ -6,7 +6,7 @@ import os
 import sys
 
 # Let documentation source code find source code of this package.
-sys.path.insert(0, os.path.dirname(os.getcwd()))
+sys.path.insert(0, os.path.dirname(os.getcwd()) + "/src")
 
 # ## Project information
 
@@ -26,7 +26,7 @@ copyright = "2021, Boni Lindsley"
 # ## General configuration
 
 extensions = [
-    "recommonmark",
+    "myst_parser",
     "sphinx.ext.autodoc",
     "sphinx.ext.coverage",
     "sphinx.ext.intersphinx",
@@ -79,6 +79,22 @@ in `html_static_path` and `html_extra_path`.
 
 * New in version 1.0.
 """
+
+# ## Extension: myst-parser
+
+#myst_enable_extensions = [
+#    "amsmath",
+#    "colon_fence",
+#    "deflist",
+#    "dollarmath",
+#    "html_admonition",
+#    "html_image",
+#    "linkify",
+#    "replacements",
+#    "smartquotes",
+#    "substitution",
+#    "tasklist",
+#]
 
 # ## Extension: sphinx.ext.autodoc
 

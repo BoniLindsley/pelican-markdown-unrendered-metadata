@@ -1,10 +1,8 @@
-Pelican Markdown Unrendered Metadata
-====================================
+# Pelican Markdown Unrendered Metadata
 
 Read Pelican metadata from link references.
 
-Usage
------
+## Usage
 
 Write metadata in the form `[//Pelican/KEY]: # (VALUE)`.
 They can be placed anywhere in the document.
@@ -34,16 +32,19 @@ Goodbye, world!
 If a key has multiple sources (references, MultiMarkdown, heading),
 the order of stored value is unspecified.
 
-Installation
-------------
+## Installation
 
 If `PLUGINS` is not specified inside `pelicanconf.py`,
 then installing this package should be sufficient setup.
+
+```sh
+python -m pip install pelican-markdown-unrendered-metadata
+```
+
 Otherwise, inside `pelicanconf.py`,
 add `markdown_unrendered_metadata` to the `PLUGINS` list variable.
 
-Raison d'être
--------------
+## Raison d'être
 
 Pelican metadata of Markdown documents
 are colon-separated key-value pairs at the beginning of the document.
