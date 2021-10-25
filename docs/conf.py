@@ -82,7 +82,7 @@ in `html_static_path` and `html_extra_path`.
 
 # ## Extension: myst-parser
 
-#myst_enable_extensions = [
+# myst_enable_extensions = [
 #    "amsmath",
 #    "colon_fence",
 #    "deflist",
@@ -94,7 +94,7 @@ in `html_static_path` and `html_extra_path`.
 #    "smartquotes",
 #    "substitution",
 #    "tasklist",
-#]
+# ]
 
 # ## Extension: sphinx.ext.autodoc
 
